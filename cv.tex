@@ -1,0 +1,144 @@
+%!TEX TS-program = xelatex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CV template
+% Originally created by Adrien Friggeri
+% Improved by Carmine Benedetto
+% Improved by Víctor Galvín 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{cv-class}
+\usepackage{afterpage}
+\usepackage{fontawesome}
+\usepackage{tcolorbox}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue
+}
+\addbibresource{bibliography.bib}
+\RequirePackage{xcolor}
+\definecolor{pblue}{HTML}{0395DE}
+
+\begin{document}
+\header{Víctor}{ Galvín Coronil}
+      {Ingeniero Electrónico Industrial}
+
+% Fake text to add separator
+\vspace{1.15cm}
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+.....
+}}
+
+% In the aside, each new line forces a line break
+\begin{aside}
+  \includegraphics[scale=0.20]{img/CV.png}}
+    ~
+  \vspace{0.65cm}
+
+  \section{Teléfono}
+   \faMobile\hspace{0.4cm}676 331 826
+    ~
+  \section{Correo}
+   \faSendO\hspace{0.2cm}\href{mailto:victor.galvinco@gmail.com}{victor.galvinco@gmail.com}
+    ~
+  \section{Enlaces}
+	\vspace{0.10cm}
+    \faLinkedinSquare\hspace{0.2cm}\href{https://linkedin.com/in/victorgalco}{linkedin.com/in/victorgalco}
+	\vspace{0.10cm}
+    \faGithub\hspace{0.2cm}\href{https://github.com/Galco6}{github.com/Galco6}
+    ~
+    \section{Idiomas}
+    \textbf{Español} - Nativo\\
+    \textbf{Inglés} - Intermedio (Certificado B1)\\
+    \textbf{Francés} - Básico\\
+    ~
+    \section{Aptitudes}
+    \textbf{Electrónica}\\
+    \framebox{Microcontroladores}
+    \framebox{ARM}
+    \framebox{AVR}
+    \framebox{Diseño electrónico}
+    \framebox{FPGA}
+    \framebox{IoT}\\
+    \vspace{0.20cm}
+    \textbf{Programación}\\
+    \framebox{C/C++}
+    \framebox{Ensamblador}
+    \framebox{VHDL}\\
+    \vspace{0.20cm}
+    \textbf{Software}\\
+    \framebox{Eagle}
+    \framebox{LabView}
+    \framebox{PSpice}
+    \framebox{Simulink}
+    \framebox{Matlab}\\
+    \vspace{0.20cm}
+    \textbf{Ofimática}\\
+    \framebox{\LaTeX}
+    \framebox{Excel}
+    \framebox{Word}
+    
+    \section{Otros}
+    Permiso de conducción B
+
+\end{aside}
+
+\vspace{0.75cm}
+\section{Experiencia}
+\begin{entrylist}
+  \entry
+    {Jul. 18 - Now}
+    {Becario - Ingeniero Diseño Electrónico}
+    {Universidad de Cádiz}
+    {Diseño, desarrollo e implementación de dispositivos electrónicos en la línea de \emph{"Sensores y sistermas de tele-medición en tiempo real"}\\\\
+    Actividades realizadas:\\
+    \begin{itemize}
+    \item Diseño de placas de circuito impreso dotados de microcontroladores, sensores,
+    transceptores de comunicación y etapas de regulación y carga de potencia.
+    \item Montaje de PCB haciendo uso de las diferentes técnicas y equipos para la soldadura de componentes SMD, entre ellas, estaciones de soldadura de aire caliente y horno de refusión por infrarrojos.
+    \item Programación de microcontroladores con aquitectura ARM.
+    \item Redacción de documentación técnica diversa.\\\\
+    \end{itemize}
+    }
+  \entry
+    {Oct. 16 - Jun. 18}
+    {Alumno Colaborador}
+    {Universidad de Cádiz}
+    {Participación en proyectos de investigación docente propios del grupo de investigación \emph{Diseño de Circuitos Microelectrónicos} a través del programa de Alumno Colaborador por la Universidad de Cádiz\\
+    }
+\end{entrylist}
+
+\section{Formación}
+\begin{entrylist}
+  \entry
+    {2014 - 2019}
+    {Grado en Ingeniería Electrónica Industrial}
+    {Universidad de Cádiz}
+    {Grado en Ingeniería Electrónica Industrial especializado en asignaturas de diseño electrónico\\
+    \emph{Trabajo Fin de Grado: "Configuración, implementación y mejora de un dispositivo emulador de circuitos y sistemas en tiempo real"
+    }.\\}
+    
+\end{entrylist}
+
+\section{Certificaciones}
+\begin{entrylist}
+  \entry
+    {Ag. 14}
+    {Preliminary English Test (PET)}
+    {Cambridge English Languaje Assessment}
+    {Cambridge English Entry Level Certificate in ESOL International (Entry 3) (Preliminary)}
+\end{entrylist}
+
+\begin{flushright}
+\vspace{1.20cm}
+\emph{Víctor Galvín Coronil}
+\end{flushright}
+\begin{flushright}
+\emph{Marzo, 2019}
+\end{flushright}
+
+\end{document}
